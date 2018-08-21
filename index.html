@@ -1,0 +1,38 @@
+
+
+
+<div style="text-align: center;"><IMG HEIGHT="200" WIDTH="350" SRC="space.JPG" ALT="image"></div>
+
+
+
+
+<div style="text-align: center;"><IMG SRC="NZPIMS.JPG" ALT="image"></div>
+
+<div style="text-align: center;"><IMG HEIGHT="200" WIDTH="350" SRC="Coffey_logo-02.jpg" ALT="image"></div>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "123") {
+alert('Internal use only!');
+window.open('pro.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Password" onClick="passWord()">
+</FORM>
+</CENTER>
+
